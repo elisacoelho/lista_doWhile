@@ -5,12 +5,15 @@
     Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido.
     */
 
-    //Entrada
+    let numero = -1;
 
+    while (numero < 0 || numero > 10 || isNaN(numero)) {
+        numero = Number(prompt(`Insira um número entre 0 e 10:`));
+        if (numero < 0 || numero > 10 || isNaN(numero)) {
+            alert(`Resposta inválida, insira um valor entre 0 e 10`)
+        }
+    }
 
-    //Processamento
-
-
-    //Saída
+    alert(`O número inserido foi ${numero}!`);
 
 </script>
